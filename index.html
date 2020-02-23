@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:600,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Portfolio</title>
+</head>
+<body">
+  <header class="header">
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <div class="row navbar__inner">
+          <div class="col-2">
+            <a class="header-link" href="http://active-be.ru">active-be.<span>ru</span></a>
+          </div>
+          <!-- Desktop nav -->
+          <div class="col-7 desktop__screen ml-auto align-self-center">
+            <ul class="nav d-flex justify-content-end flex-lg-nowrap">
+              <li class="nav__item"><a href="#">Главная</a></li>
+              <li class="nav__item"><a href="#">Услуги</a></li>
+              <li class="nav__item"><a href="#">Портфолио</a></li>
+              <li class="nav__item"><a href="#">Акции</a></li>
+              <li class="nav__item"><a href="#">Связь</a></li>
+            </ul>
+          </div>
+          <!-- Mobile nav -->
+          <div class="col-1 mobile__screen ml-auto mt-auto">
+            <a href="#" class="mobile__nav__trigger"><span class="mobile__nav__icon"></span></a>
+            <nav class="mobile__nav">
+              <ul class="mobile__nav__list">
+                <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Главная</a></li>
+                <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Услуги</a></li>
+                <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Портфолио</a></li>
+                <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Акции</a></li>
+                <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Связь</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </nav>
+    <div class="header-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex flex-column align-items-center">
+            <h2 class="header-content__subtitle">Наше портфолио</h2>
+            <h1 class="header-content__title"><span>be</span>active</h1>
+            <a class="more" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 content__our-contacts">
+          <h3>Вопросы есть всегда</h3>
+          <h3><a href="#">Наши контакты</a></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="content__stocks">
+          <h2>К сожалению на данный момент у нас нет акций <span class="sad">:(</span></h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row footer__inner">
+        <div class="col-md-6 d-flex flex-column justify-content-between">
+          <a class="footer-link" href="http://active-be.ru">active-be.<span>ru</span></a>
+          <h6 class="footer__subtitle">Разработка сайтов</h6>
+          <p class="footer__slogan">У active-be есть основной принцип: честность всегда окупается.</p>
+          <p class="copyright">2018-2020 &#169; be active
+          </p>
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-between">
+          <div class="contacts">
+            <h5 class="contacts__title">Контакты</h5>
+            <h5 class="company">Компания: <a href="http://active-be.ru">Be Active</a></h5>
+            <h5 class="phone">Телефон: <a href="tel:+7 (901) 112-37-46">+7 (901) 112-37-46</a></h5>
+            <h5 class="email">Email: <a href="mailto:beactive@gmail.com">beactive@gmail.com</a></h5>
+            <h5 class="vk"><a href="https://vk.com/activebe">Мы ВКонтакте</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      $('.mobile__nav__trigger').on('click', function(e){
+        e.preventDefault();
+      $(this).parent().toggleClass('mobile__nav--active');
+    });
+    </script>
+</body">
+</html>
